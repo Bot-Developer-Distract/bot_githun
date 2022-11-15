@@ -43,4 +43,3 @@ Aki project là một dự án bot discord được tạo chủ yếu bằng th�
 
 <p><a href ="https://github.com/discord/discord-api-docs">Discord API</a></p>
 <p><a href="https://github.com/Rapptz/discord.py">Discord.py</a></p>
-"# aki-bot" 
