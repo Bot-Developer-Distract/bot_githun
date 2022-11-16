@@ -12,8 +12,7 @@
 # Introduce 
 
 <h3>Aki Project Là Gì?</h3>
-Aki project là một dự án bot discord được tạo chủ yếu bằng thư viện <strong>discord.py</strong> và xây dựng, phát triển bởi Anh Duc và King. Dự án tạo ra với mục đích <strong>giúp mọi người đều có thể tạo bot discord</strong>. Dự án vẫn đang trong quá trình xây dựng và phát triển mong được mọi người ủng hộ
-
+<p>Aki project là một dự án bot discord được tạo chủ yếu bằng thư viện <strong>discord.py</strong> và xây dựng, phát triển bởi Anh Duc và King. Dự án tạo ra với mục đích <strong>giúp mọi người đều có thể tạo bot discord</strong>. Dự án vẫn đang trong quá trình xây dựng và phát triển mong được mọi người ủng hộ</p>
 <hr />
 
 ## Installation
