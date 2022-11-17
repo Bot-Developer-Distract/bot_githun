@@ -3,8 +3,8 @@
 <p align="center">Một dự án Bot Discord với thư viện <strong>discord.py</strong> nhằm giúp mọi người trên mọi thiết bị đều có thể tạo bot</p>
 <p align="center">
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" width="70" height="22" style= "display: inline"/>
-    <img src="https://badgen.net/github/commits/iotranvn/Aki-bot" width="75" height="22"/>
-    <img src="https://visitor-badge.glitch.me/badge?page_id=iotranvn.Aki-bot" height="18"/>
+    <img src="https://badgen.net/github/commits/iotranvn/aki-bot" width="75" height="22"/>
+    <img src="https://visitor-badge.glitch.me/badge?page_id=iotranvn.aki-bot" height="18"/>
 </p>
 <p align ="center"><a href="https://discord.gg/X8KpzCGu">🌐Support Server Discord</a></p>
 <hr />
@@ -12,8 +12,7 @@
 # Introduce 
 
 <h3>Aki Project Là Gì?</h3>
-Aki project là một dự án bot discord được tạo chủ yếu bằng thư viện <strong>discord.py</strong> và xây dựng, phát triển bởi Anh Duc và King. Dự án tạo ra với mục đích <strong>giúp mọi người đều có thể tạo bot discord</strong>. Dự án vẫn đang trong quá trình xây dựng và phát triển mong được mọi người ủng hộ
-
+<p>Aki project là một dự án bot discord được tạo chủ yếu bằng thư viện <strong>discord.py</strong> và xây dựng, phát triển bởi Anh Duc và King. Dự án tạo ra với mục đích <strong>giúp mọi người đều có thể tạo bot discord</strong>. Dự án vẫn đang trong quá trình xây dựng và phát triển mong được mọi người ủng hộ</p>
 <hr />
 
 ## Installation
@@ -43,4 +42,3 @@ Aki project là một dự án bot discord được tạo chủ yếu bằng th�
 
 <p><a href ="https://github.com/discord/discord-api-docs">Discord API</a></p>
 <p><a href="https://github.com/Rapptz/discord.py">Discord.py</a></p>
-"# aki-bot" 

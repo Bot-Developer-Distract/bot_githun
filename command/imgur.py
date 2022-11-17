@@ -3,25 +3,26 @@ from discord.ext import commands
 import aiohttp
 class Imgur(commands.Cog):
     config = {
-        "name": "imgur",
-        "desc": "upload image to imgur",
-        "use": "<prefix>imgur",
+        "name": "upimg",
+        "desc": "upload image",
+        "use": "<prefix>upimg",
         "author": "Anh Duc(aki team)"
     }
     def __init__(self, bot):
         self.bot = bot
     @commands.command()
-    async def imgur(self, ctx):
+    async def upimg(self, ctx):
         if ctx.message.attachments:
             for i in ctx.message.attachments:
                 async with aiohttp.ClientSession() as session:
-                    get = await session.get(f"https://api-thanhali.thanhali.repl.co/imgur?link={i.url}")
-                    get = await get.json()
-                    if get['uploaded']['status'] == "success":
-                        await ctx.reply(f"upload ảnh thành công\nlink: {get['uploaded']['image']}")
-                        return 
-                    await ctx.send('Error: Upload ảnh thất bại')
+                    a = await session.post(url="https://0x0.st", data={"url": f"{i.url}"})
+                    
+                    if a.status == 200:
+                        a = await a.text()
+                        await ctx.reply(f"upload ảnh thành công\nlink: {a}")
+                    else:
+                        await ctx.send('Error: Upload ảnh thất bại')
             return
-        await ctx.send("Hãy gửi kèm theo các bức ảnh bạn muốn đăng lên imgur")
+        await ctx.send("Hãy gửi kèm theo các bức ảnh bạn muốn đăng lên")
 async def setup(bot):
     await bot.add_cog(Imgur(bot))
