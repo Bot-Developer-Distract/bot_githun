@@ -2,6 +2,12 @@ import discord
 import random
 from discord.ext import commands
 class Thayboi(commands.Cog):
+    config = {
+      "name": "thayboi",
+      "desc": "thầy bói tài trợ lệnh này+)",
+      "use": "<prefix>thayboi",
+      "author": "Anh Duc(aki team)"
+    }
     def __init__(self, bot):
         self.bot = bot
     @commands.command()
