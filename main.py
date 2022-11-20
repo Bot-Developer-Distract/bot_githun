@@ -62,6 +62,14 @@ def save_member_data(data):
 #hàm chính chạy bot
 #=============================================#
 @bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, CommandNotFound):
+        await ctx.reply(f"Không tìm thấy lệnh `{ctx.invoked_with}`")
+
+    elif isinstance(error, CommandOnCooldown):
+        await ctx.reply(f"Xài lệnh chậm thôi bạn ơi. Hãy thử lại sau {error.retry_after :.3f}s")
+
+@bot.event
 async def on_ready():
   bot.session = await aiohttp.ClientSession()
   print("bot đã sẵn sàng")
