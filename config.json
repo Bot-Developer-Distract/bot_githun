@@ -4,5 +4,5 @@
     "admin_id":"admin",
     "bot_name":"admin bot",
     "token": "",
-    "on_replit": true
+    "on_replit":false 
 }

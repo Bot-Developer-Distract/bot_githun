@@ -23,7 +23,7 @@ bot.sql = bot.database.cursor()
 
 #treo bot
 #=============================================#
-server()#:) đơn giản như này thôi(Bất ngờ chx og già =)))))
+server()
 #=============================================#
 
 #hàm chung
@@ -132,8 +132,7 @@ async def main():
     try:
         print(bcolors.WARNING+f">> Khởi động thành công {config['bot_name']} <<"+bcolors.ENDC)
         print(bcolors.OKBLUE+f'''Lời nhắn của aki team :{thong_bao['message']}'''+bcolors.ENDC)
-        my_secret = os.environ['token']
-        await bot.start(my_secret)
+        await bot.start('MTAwMjgyNjM5MjE2NzI3MjUzOA.GOjncd.tXewryN0z3tH_irpDyblf4RufxCMBF2IW-nAS8')
     except:
         print(bcolors.WARNING+'>> LỖI TOKEN BOT <<'+bcolors.ENDC)
 try: 
