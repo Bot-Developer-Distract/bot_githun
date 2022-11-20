@@ -4,6 +4,12 @@ from discord.ext import commands
 import json
 import random
 class Thinh(commands.Cog):
+    config = {
+      "name": "thinh",
+      "desc": "thính+))",
+      "use": "<prefix>thinh",
+      "author": "Anh Duc(aki team)"
+    }
     def __init__(self, bot):
         self.bot = bot
     @commands.command()

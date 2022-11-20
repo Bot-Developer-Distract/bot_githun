@@ -4,6 +4,12 @@ from discord.ext import commands
 import random 
 from command.random_list import list_color 
 class Age(commands.Cog):
+    config = {
+      "name": "age",
+      "desc": " tinh tuoi",
+      "use": "<prefix>age <day>/<month>/<year>",
+      "author": "Anh Duc(aki team)"
+    }
     def __init__(self, bot):
         self.bot = bot
     @commands.command()
