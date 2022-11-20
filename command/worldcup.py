@@ -1,25 +1,30 @@
-from discord.ext import commands
 import discord
-import aiohttp #sử dụng aiohttp thay cho requests 
-class worldcup(commands.Cog):
+from discord.ext import commands
+import aiohttp
+import random
+from command.random_list import list_color
+class Worldcup(commands.Cog):
     config = {
-        "name": "...", #tên lệnh
-        "desc": "...", #mô tả về lệnh
-        "use": "...", #cách sử dụng 
-        "author": "...", #credit tác giả
-        "event": False #nếu là event thì để True còn là lệnh thì để False hoặc không để gì cũng đc:))
+        "name": "worldcup",
+        "desc": "xem thong tin ve tran dau world cup moi nhat=))",
+        "use": "<prefix>worldcup",
+        "author": "aki team"
     }
     def __init__(self, bot):
         self.bot = bot
-        self.bot.session = aiohttp.ClientSession()
     @commands.command()
-    async def worldcup(self,ctx):
-        async with self.bot.session.get(f'https://api-iotran.tk/worldcup') as get_answer: #gửi request đến api (có thể đọc docs của aiohttp để biết rõ hơn-))
-            answer = await get_answer.json()
-            em = discord.embeds.Embed(title="Trận đấu sắp diễn ra",description=f"Đội:{answer['Trận đấu sắp diễn ra']} /n Bảng:{answer['Bảng']} /n Trạng thái trận đấu:{answer['Trạng thái trận đấu']}",color=0x00ff00)
-            await ctx.reply(answer)
-    
-
-
+    async def worldcup(self, ctx):
+        try:
+            async with aiohttp.ClientSession() as session:
+                data = await session.get("https://api-iotran.tk/worldcup")
+                data = await data.json()
+                em = discord.Embed(title= "**⚽ Today worldcup match**", color = random.choice(list_color))
+                em.add_field(name = "Trận đấu sắp diễn ra:", value=str(data["Trận đấu sắp diễn ra "]))
+                em.add_field(name = "trận đấu tại bảng: " , value = data["Bảng"], inline =True)
+                em.add_field(name = "bắt đầu vào:", value=f"{data['Ngày diễn ra']} - {data['Thời gian bắt đầu']}")
+                em.add_field(name = "Trạng thái trận đấu", value=data["Trạng thái trận đấu"])
+                await ctx.reply(embed = em)
+        except Exception as e:
+            print(e)
 async def setup(bot):
-    await bot.add_cog(worldcup(bot))
+    await bot.add_cog(Worldcup(bot))
