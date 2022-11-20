@@ -1,6 +1,12 @@
 from discord.ext import commands
 import discord
 class Avatar(commands.Cog):
+    config = {
+      "name": "avatar",
+      "desc": "avatar của member trong server",
+      "use": "<prefix>avatar [@mention]",
+      "author": "Anh Duc(aki team)"
+    }
     def __init__(self, bot):
         self.bot = bot
     @commands.command()
