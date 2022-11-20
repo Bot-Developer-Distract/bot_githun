@@ -3,6 +3,5 @@
     "admin_name":"admin",
     "admin_id":"admin",
     "bot_name":"admin bot",
-    "token": "",
-    "on_replit":false 
+    "token": ""
 }
