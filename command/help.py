@@ -22,9 +22,9 @@ class Help(commands.Cog):
                             module += self.bot.cogs[str(i)].config["name"] + '\n'
                     except:
                         continue 
-                em = discord.Embed(title="_Aki Chan_", description="Sử dụng `.help <lệnh>` để biết rõ hơn thông tin về lệnh", color=0xFFF)
+                em = discord.Embed(title="_HELP COMMAND_", description="Sử dụng `<prefix>help <lệnh>` để biết rõ hơn thông tin về lệnh", color=0xFFF)
                 em.add_field(name="_Cac lenh hien co tren bot_", value=module)
-                em.add_field(name = "_About_", value="_Aki chan_ là")
+                em.set_image(url='https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1')
                 await ctx.send(embed=em)
             else:
                 try:
@@ -32,7 +32,7 @@ class Help(commands.Cog):
                   if msg.get("event", False):
                     await ctx.send(str(mdl) + "không phải là một lệnh")
                     return
-                  em = discord.Embed(title = f"_{mdl.lower()}_", description=f"Tên lệnh: {msg['name']}\nMô tả: {msg['desc']}\nCách sử dụng: {msg['use']}\ntác giả: {msg['author']}\n") 
+                  em = discord.Embed(title = f"_{mdl.lower()}_", description=f"Tên lệnh: {msg['name']}\nMô tả: {msg['desc']}\nCách sử dụng: {msg['use']}\ntác giả: {msg['author']}\n")
                   await ctx.send(embed = em)
                 except Exception as e:
                     print(e)
