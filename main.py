@@ -140,7 +140,11 @@ async def main():
     try:
         print(bcolors.WARNING+f">> Khởi động thành công {config['bot_name']} <<"+bcolors.ENDC)
         print(bcolors.OKBLUE+f'''Lời nhắn của aki team :{thong_bao['message']}'''+bcolors.ENDC)
-        await bot.start(config['token'])
+        if config["on_replit"] == True:
+            my_secret = os.environ['token']
+            await bot.start(my_secret)
+        elif config["on_replit"] == False:
+            await bot.start(config["token"])
     except:
         print(bcolors.WARNING+'>> LỖI TOKEN BOT <<'+bcolors.ENDC)
 try: 

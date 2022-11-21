@@ -6,7 +6,7 @@
     <img src="https://badgen.net/github/commits/iotranvn/aki-bot" width="75" height="22"/>
     <img src="https://visitor-badge.glitch.me/badge?page_id=iotranvn.aki-bot" height="18"/>
 </p>
-<p align ="center"><a href="https://discord.gg/X8KpzCGu">🌐Support Server Discord</a></p>
+<p align ="center"><a href="https://discord.gg/MBKMJr9TG8">🌐Support Server Discord</a></p>
 <hr />
 
 # Introduce 
