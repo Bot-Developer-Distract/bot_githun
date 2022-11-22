@@ -4,6 +4,6 @@
     "admin_id":"admin",
     "bot_name":"admin bot",
     "status":"hi i'm aki bot",
-    "on_replit":false,
-    "token": "MTAxNDE4NTc5NDM5Njc2MjEzMg.Gnm_Oq.VeNo8ItItVnIZmcKZWK3HdCEGSUn4_DcqrFS7Y"
+    "on_replit":true,
+    "token":""
 }
