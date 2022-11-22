@@ -1,9 +1,9 @@
 {
-    "prefix":"??",
+    "prefix":"-",
     "admin_name":"admin",
     "admin_id":"admin",
     "bot_name":"admin bot",
     "status":"hi i'm aki bot",
-    "on_replit":true,
-    "token": ""
+    "on_replit":false,
+    "token": "MTAxNDE4NTc5NDM5Njc2MjEzMg.Gnm_Oq.VeNo8ItItVnIZmcKZWK3HdCEGSUn4_DcqrFS7Y"
 }
