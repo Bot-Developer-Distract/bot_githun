@@ -1,4 +1,3 @@
-
 from discord.ext.commands import *
 from discord.ext import commands
 from discord import *
@@ -74,8 +73,9 @@ async def on_command_error(ctx, error):
 
 @bot.event
 async def on_ready():
-  bot.session = await aiohttp.ClientSession()
-  print("bot đã sẵn sàng")
+    activity = Game(name=config['status'], type=3)
+    await bot.change_presence(status=Status.idle, activity=activity)
+    bot.session = await aiohttp.ClientSession()
   
 class bcolors:
     HEADER = '\033[95m'
