@@ -14,7 +14,7 @@ class Simimi(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self,message):
         try:
-            if message.author.id != 1014185794396762132:
+            if message.author.id != self.bot.user.id:
                 self.bot.sql.execute(f'SELECT server_channel_simimi FROM server_data WHERE server_id={message.guild.id}')
                 if (self.bot.sql.fetchone() == None):
                     self.bot.sql.execute(f'INSERT INTO server_data (server_id,server_prefix,server_channel_simimi,server_channel_confession) VALUES ({message.guild.id},0,0,0)')
