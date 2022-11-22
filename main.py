@@ -23,7 +23,10 @@ bot.sql = bot.database.cursor()
 
 #treo bot
 #=============================================#
-server()
+if(config['on_replit']==True):
+    server()
+else:
+    pass
 #=============================================#
 
 #hàm chung
