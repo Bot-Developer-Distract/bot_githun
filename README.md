@@ -1,5 +1,5 @@
 ![Python](https://i.ibb.co/fqxXN6g/FB-IMG-1667750948250.jpg)
-<h1 align=center>AKI PROJECT</h1>
+<h1 align=center>Githun PROJECT</h1>
 <p align="center">Một dự án Bot Discord với thư viện <strong>discord.py</strong> nhằm giúp mọi người trên mọi thiết bị đều có thể tạo bot</p>
 <p align="center">
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" width="70" height="22" style= "display: inline"/>
@@ -42,4 +42,4 @@
 
 <p><a href ="https://github.com/discord/discord-api-docs">Discord API</a></p>
 <p><a href="https://github.com/Rapptz/discord.py">Discord.py</a></p>
-<p><a href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ>Youtube Channel</a></p>
+<p><a href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ">Youtube Channel</a></p>
