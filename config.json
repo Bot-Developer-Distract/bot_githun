@@ -1,9 +1,9 @@
 {
-    "prefix":"-",
-    "admin_name":"admin",
-    "admin_id":"admin",
-    "bot_name":"admin bot",
-    "status":"hi i'm aki bot",
-    "on_replit":true,
-    "token":""
+    "prefix": "?/",
+    "admin_name": "John Week  ♌#8686",
+    "admin_id": "922183934899523594", # id admin
+    "bot_name": "Github Bot", # name bot
+    "status": "hi i'm Github bot", # status bot
+    "on_replit": false, # true or false 
+    "token": "token bot"  # TOken bot here
 }
