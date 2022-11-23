@@ -1,5 +1,6 @@
 from discord.ext.commands import *
 from discord.ext import commands
+from discord.ext import tasks
 from discord import *
 import aiohttp
 import sqlite3
@@ -9,7 +10,7 @@ import nest_asyncio
 import asyncio
 import json
 import requests
-from host.webdriver import server
+from host.webdriver import server 
 #khai báo
 #=============================================#
 nest_asyncio.apply()
@@ -73,9 +74,19 @@ async def on_command_error(ctx, error):
 
 @bot.event
 async def on_ready():
-    activity = Game(name=config['status'], type=3)
-    await bot.change_presence(status=Status.idle, activity=activity)
-    bot.session = await aiohttp.ClientSession()
+    task_loop.start()
+...
+@tasks.loop(seconds=1)
+async def task_loop():
+    activity = Game(name="Đang chơi game mà <3", type=3)
+    await bot.change_presence(status=Status.online, activity=activity)
+    await asyncio.sleep(3)
+    game = Game(name ="Hấp dẫn cùng WC ✍️", type=3)
+    await bot.change_presence(status=Status.idle, activity=game)
+    await asyncio.sleep(3)
+    game = Game(name ="Hãy thử xài lệnh help 🪧", type=3)
+    await bot.change_presence(status=Status.dnd, activity=game)
+    await asyncio.sleep(3)
   
 class bcolors:
     HEADER = '\033[95m'
@@ -130,15 +141,15 @@ async def main():
                                                                        
 '''+bcolors.ENDC)
     print(f'''
-        ══╦═════════════════════════════════╦══
-╔═════════╩═════════════════════════════════╩═════════╗      
-║ TÁC GIẢ:King.#4732 and Anh Duc#5954                 
-║ CHỦ SỞ HỮU BOT: {config['admin_name']}({config['admin_id']})                          
-║ TÊN BOT:{config['bot_name']}  
-║ PREFIX:{config['prefix']}   
-║ PHIÊN BẢN:{thong_bao['version']}                       
-║ SỐ MODULE(LỆNH) HIỆN CÓ TRONG BOT: {dem_lenh}                   
-╚═════════════════════════════════════════════════════╝
+       ══╦═════════════════════════════════╦══
+╔═════════╩═════════════════════════════════╩═════════════════════╗  
+║ TÁC GIẢ:John Week  ♌#8686                                     ║
+║ CHỦ SỞ HỮU BOT: {config['admin_name']}({config['admin_id']})    ║                      
+║ TÊN BOT:{config['bot_name']}                                    ║
+║ PREFIX:{config['prefix']}                                       ║
+║ PHIÊN BẢN:{thong_bao['version']}                                ║
+║ SỐ MODULE(LỆNH) HIỆN CÓ TRONG BOT: {dem_lenh}                   ║  
+╚══════════════════════════════════════════════════════════════════╝
 ''')
     try:
         print(bcolors.WARNING+f">> Khởi động thành công {config['bot_name']} <<"+bcolors.ENDC)
@@ -162,3 +173,5 @@ except Exception as e:
 
 
 #=============================================#
+       
+
