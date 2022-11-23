@@ -34,11 +34,12 @@
 
 ### Contact
 
-<p>Anh Duc: Discord - Anh Duc#5954 | <a href="https://www.facebook.com/profile.php?id=100026348631060">Facebook</a> | <a href="https://github.com/CCcutcanh">Github</a></p>
-<p>King: Discord - King.#4732 | <a href="https://www.facebook.com/letranhoanglanvn">Facebook</a> | <a href= "https://github.com/iotranvn">Github</a></p>
+<p>John Week: Discord - John Week  ♌#8686 | <a href="https://www.facebook.com/batmi.bimat.543/">Facebook</a> | <a href="https://github.com/81CuongVn">Github</a></p>
+<p>John Week: Discord - John Week  ♌#8686 | <a href="https://www.facebook.com/batmi.bimat.543/">Facebook</a> | <a href= "https://github.com/81CuongVn">Github</a></p>
 <p><a href="https://www.facebook.com/profile.php?id=100086701778255">Fanpage Facebook</a>
 
 #### Links
 
 <p><a href ="https://github.com/discord/discord-api-docs">Discord API</a></p>
 <p><a href="https://github.com/Rapptz/discord.py">Discord.py</a></p>
+<p><a href="https://www.youtube.com/channel/UCNE4yy2XWJMk1og08Oxp6wQ>Youtube Channel</a></p>
